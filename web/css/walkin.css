@@ -1,0 +1,23 @@
+.content {
+    display:flex;
+
+    padding: 20px 0px;
+    width: 80%;
+}
+
+
+.walk-in {
+    padding: 10px;
+    width: 50%;
+}
+
+.walk-in-info label {
+    display: block;
+
+    font-size: 12px;
+}
+
+.walk-in-info select,
+.walk-in-info input[type="text"]{
+    font-size: 22px;
+}

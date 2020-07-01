@@ -1,0 +1,24 @@
+.content {
+    display:flex;
+    flex-direction: column;
+
+    padding: 20px 0px;
+    width: 80%;
+}
+
+.rfid-scanner {
+    padding: 10px;
+    width: 50%;
+}
+
+.member-info {
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    display: block;
+
+    margin: 0 auto;
+    width: 30%;
+}

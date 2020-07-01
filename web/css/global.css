@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    position: fixed;
+
+    width: 20%;
+    height: 100vh;
+
+    background-color: #1c252f;
+}
+.navbar img {display:block;margin:30px auto;width:50%;}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    list-style-type: none;
+}
+
+
+.nav li a {
+    display: block;
+
+    padding: 12px 40px;
+
+    color: #fff;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    transition: all .25s ease-in-out;
+    background-color: #131a23;
+    color: white;
+}
+
+.navbar-active a {
+    background-color: #131a23;
+    color: white;
+}
+
+.container {
+    float: right;
+
+    width: 80%;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    left: 0;
+    top: 0;
+    
+    width: 100%; 
+    height: 100%; 
+    
+    background-color: rgb(0,0,0); 
+    
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 1; 
+
+    overflow: auto;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 5% auto; 
+    width: 25%;
+    
+    background-color: #fefefe;
+    border-radius: 10px;
+}
+
+.modal-header {
+    position: relative;
+
+    padding: 14px 20px;
+    width: 100%;
+
+    color: white;
+    background-color: #6c7ae0;
+    border-radius: 10px 10px 0px 0px;
+
+    text-align: center;
+    font-size: 26px;
+}
+
+.modal-header img {
+    display: block;
+    
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+}
+
+.modal-header input[type="text"], 
+.modal-header input[type="text"]:disabled {
+    padding: 8px;
+
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    
+    font-size: 18px;
+    text-align: center;
+}
+
+.modal-description {
+    padding: 14px 20px;
+}
+
+.modal-editable label {
+    display: block;
+
+    color: #999;
+    font-size: 12px;
+}
+
+.modal-editable input[type="text"],
+.modal-editable input[type="password"],
+.modal-editable input[type="date"],
+.modal-editable select  {
+    padding: 6px 0px;
+    width: 100%;
+
+    color: #555;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #999;
+
+    font-size: 16px;
+
+    transition: all .25s ease-in-out;
+}
+
+.modal-editable input[type="text"]:focus,
+.modal-editable input[type="password"]:focus,
+.modal-editable input[type="date"]:focus,
+.modal-editable select:focus {
+    color: #000;
+    border-color: #000;
+}
+
+.modal-editable input[type="text"]:hover,
+.modal-editable input[type="password"]:hover,
+.modal-editable input[type="date"]:hover,
+.modal-editable select:hover {
+    color: #000;
+    border-color: #000;
+}
+
+
+.modal-editable input[type="text"]:disabled,
+.modal-editable input[type="password"]:disabled,
+.modal-editable input[type="date"]:disabled,
+.modal-editable select:disabled {
+    color: #999;
+    background-color: white;
+} 
+
+.modal-form input[type="button"], 
+.modal-form input[type="submit"] {
+    display: inline-block;
+    
+    margin: 4px 2px;
+    padding: 10px 24px;
+    
+    color: #000;
+    background-color: white; 
+    border: 2px solid #6c7ae0;
+    border-radius: 5px;
+    
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+}
+
+.modal-form input[type="button"]:hover, 
+.modal-form input[type="submit"]:hover {
+    color: white;
+    background-color: #6c7ae0; 
+}
+
+.modal-form input[type="button"]:disabled, 
+.modal-form input[type="submit"]:disabled {
+    color: white;
+    background-color: #999; 
+    border: 2px solid #999;
+    cursor: auto;
+}
+
+/* The Close Button */
+.modal-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+    color: #f1f1f1;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media print {
+    .navbar {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .content {
+      width: 100%;
+    }
+
+    .content button {
+        display: none;
+    }
+
+    .content input[type="text"] {
+        display: none;
+    }
+
+}
+
